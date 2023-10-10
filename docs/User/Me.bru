@@ -1,23 +1,15 @@
 meta {
-  name: Create
+  name: Me
   type: http
-  seq: 1
+  seq: 2
 }
 
-post {
-  url: http://localhost:3000/user
-  body: json
+get {
+  url: http://localhost:3000/me
+  body: none
   auth: bearer
 }
 
 auth:bearer {
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiaGVucmlxdWVAZ21haWwuY29tIiwibmFtZSI6IkhlbnJpcXVlIiwiaWF0IjoxNjk2OTcwNjI5LCJleHAiOjE2OTc1NzU0Mjl9.P99W6WJfyJx2VZu1NndnqSNdeSAOXoo8_bTCjE4f6_o
-}
-
-body:json {
-  {
-    "email": "henrique3@gmail.com",
-    "password": "123456",
-    "name": "Henrique"
-  }
 }
